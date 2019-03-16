@@ -1,0 +1,9 @@
+# File attributes for Git repository.
+# References at https://git-scm.com/docs/gitattributes.
+
+# Handle files as text and ensure Unix line endings.
+* text=auto eol=lf
+
+# Ignore differences on Yarn's lockfile.
+# Since version 1.0, Yarn automatically handle merge conflicts.
+yarn.lock -diff

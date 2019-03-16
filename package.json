@@ -1,0 +1,12 @@
+{
+  "name": "typescript-library-boilerplate",
+  "version": "0.0.0",
+  "description": "",
+  "repository": "https://github.com/VitorLuizC/typescript-library-boilerplate.git",
+  "author": {
+    "url": "https://vitorluizc.github.io/",
+    "name": "Vitor Luiz Cavalcanti",
+    "email": "vitorluizc@outlook.com"
+  },
+  "license": "MIT"
+}
