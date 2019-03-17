@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es2018"],
+
+    // Configuration for build.
+    "newLine": "LF",
+    "noEmitOnError": true,
+    "outDir": "dist/",
+
+    // Configuration for module.
+    "esModuleInterop": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Configuration for type declarations.
+    "declaration": true,
+    "declarationDir": "types/",
+
+    // Configuration for type strictness.
+    "alwaysStrict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true
+  }
+}
