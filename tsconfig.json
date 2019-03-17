@@ -2,19 +2,10 @@
   "compilerOptions": {
     "lib": ["es2018"],
 
-    // Configuration for build.
-    "newLine": "LF",
-    "noEmitOnError": true,
-    "outDir": "dist/",
-
     // Configuration for module.
     "esModuleInterop": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
-
-    // Configuration for type declarations.
-    "declaration": true,
-    "declarationDir": "types/",
 
     // Configuration for type strictness.
     "alwaysStrict": true,
@@ -31,5 +22,9 @@
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true
   },
-  "include": [".bilirc.ts", "src/"]
+  "include": [
+    ".bilirc.ts",
+    "src/",
+    "test/"
+  ]
 }

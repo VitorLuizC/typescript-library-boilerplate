@@ -23,10 +23,8 @@ const configuration: Configuration = {
   plugins: {
     'typescript2': {
       clean: true,
-      useTsconfigDeclarationDir: true,
-      tsconfigOverride: {
-        includes: []
-      }
+      tsconfig: 'tsconfig.bundle.json',
+      useTsconfigDeclarationDir: true
     }
   }
 };

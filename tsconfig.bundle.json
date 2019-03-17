@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // Configuration for build.
+    "newLine": "LF",
+    "noEmitOnError": true,
+    "outDir": "dist/",
+
+    // Configuration for type declarations.
+    "declaration": true,
+    "declarationDir": "types/",
+  },
+  "include": [
+    "src/"
+  ]
+}
