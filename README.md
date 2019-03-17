@@ -28,7 +28,7 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 <script src="https://cdn.jsdelivr.net/npm/[name]"></script>
 
 <script>
-  // UMD bundle uses [cammelCaseName] as global variable.
+  // UMD module is exposed through the "[cammelCaseName]" global variable.
   console.log([cammelCaseName]);
 </script>
 ```
