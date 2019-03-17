@@ -2,11 +2,30 @@
   "name": "typescript-library-boilerplate",
   "version": "0.0.0",
   "description": "",
-  "repository": "https://github.com/VitorLuizC/typescript-library-boilerplate.git",
+  "main": "src/index.ts",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/typescript-library-boilerplate.git"
+  },
+  "keywords": [
+    "typescript",
+    "boilerplate",
+    "library"
+  ],
   "author": {
     "url": "https://vitorluizc.github.io/",
     "name": "Vitor Luiz Cavalcanti",
     "email": "vitorluizc@outlook.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/typescript-library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/typescript-library-boilerplate#readme"
 }
