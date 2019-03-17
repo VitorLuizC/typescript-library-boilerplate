@@ -1,0 +1,35 @@
+/*!
+ * typescript-library-boilerplate v0.0.0
+ * (c) Vitor Luiz Cavalcanti <vitorluizc@outlook.com> (https://vitorluizc.github.io)
+ * Released under the MIT License.
+ */
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = global || self, factory(global.typescriptLibraryBoilerplate = {}));
+}(this, function (exports) { 'use strict';
+
+  /**
+   * Check if value is parseable to number.
+   * @example ```ts
+   * isNumberParseable('AAAA');
+   * //=> false
+   *
+   * isNumberParseable('100');
+   * //=> true
+   *
+   * if (!isNumberParseable(value))
+   *   throw new Error('Value can\'t be parseable to `Number`.')
+   * return Number(value);
+   * ```
+   * @param value - An `unknown` value to be checked.
+   */
+  var isNumberParseable = function isNumberParseable(value) {
+    return !Number.isNaN(Number(value));
+  };
+
+  exports.isNumberParseable = isNumberParseable;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
+
+}));

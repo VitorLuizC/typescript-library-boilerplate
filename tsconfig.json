@@ -32,5 +32,6 @@
     "strictNullChecks": true,
     "strictFunctionTypes": true,
     "strictPropertyInitialization": true
-  }
+  },
+  "include": [".bilirc.ts", "src/"]
 }

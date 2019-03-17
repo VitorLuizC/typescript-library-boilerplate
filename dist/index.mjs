@@ -3,10 +3,6 @@
  * (c) Vitor Luiz Cavalcanti <vitorluizc@outlook.com> (https://vitorluizc.github.io)
  * Released under the MIT License.
  */
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
 /**
  * Check if value is parseable to number.
  * @example ```ts
@@ -26,4 +22,4 @@ var isNumberParseable = function isNumberParseable(value) {
   return !Number.isNaN(Number(value));
 };
 
-exports.isNumberParseable = isNumberParseable;
+export { isNumberParseable };
