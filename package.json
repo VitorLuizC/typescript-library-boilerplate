@@ -14,11 +14,15 @@
     "bili": "^4.5.2",
     "rollup-plugin-typescript2": "^0.20.1",
     "ts-node": "^8.0.3",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.27",
     "typescript": "^3.3.3333"
   },
   "scripts": {
+    "doc": "typedoc src/index.ts",
     "test": "ava",
-    "build": "bili"
+    "build": "bili",
+    "prepare": "yarn doc && yarn build && yarn test"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,7 @@
+{
+  "out": "./docs",
+  "mode": "file",
+  "theme": "markdown",
+  "readme": "none",
+  "module": "es2015"
+}
