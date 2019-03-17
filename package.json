@@ -1,5 +1,5 @@
 {
-  "name": "typescript-library-boilerplate",
+  "name": "[name]",
   "version": "0.0.0",
   "description": "",
   "cdn": "dist/index.umd.js",
@@ -22,23 +22,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VitorLuizC/typescript-library-boilerplate.git"
+    "url": "git+https://github.com/[author]/[name].git"
   },
   "keywords": [
     "typescript",
     "boilerplate",
     "library"
   ],
-  "author": {
-    "url": "https://vitorluizc.github.io/",
-    "name": "Vitor Luiz Cavalcanti",
-    "email": "vitorluizc@outlook.com"
-  },
+  "author": "[author]",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VitorLuizC/typescript-library-boilerplate/issues"
+    "url": "https://github.com/[author]/[name]/issues"
   },
-  "homepage": "https://github.com/VitorLuizC/typescript-library-boilerplate#readme",
+  "homepage": "https://github.com/[author]/[name]#readme",
   "ava": {
     "require": [
       "ts-node/register"
