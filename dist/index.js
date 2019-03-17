@@ -1,6 +1,6 @@
 /*!
- * typescript-library-boilerplate v0.0.0
- * (c) Vitor Luiz Cavalcanti <vitorluizc@outlook.com> (https://vitorluizc.github.io)
+ * [name] v0.0.0
+ * (c) [author]
  * Released under the MIT License.
  */
 'use strict';

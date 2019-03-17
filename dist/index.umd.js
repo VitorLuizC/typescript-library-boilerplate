@@ -1,12 +1,12 @@
 /*!
- * typescript-library-boilerplate v0.0.0
- * (c) Vitor Luiz Cavalcanti <vitorluizc@outlook.com> (https://vitorluizc.github.io)
+ * [name] v0.0.0
+ * (c) [author]
  * Released under the MIT License.
  */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global.typescriptLibraryBoilerplate = {}));
+  (global = global || self, factory(global['[cammelCaseName]'] = {}));
 }(this, function (exports) { 'use strict';
 
   /**
