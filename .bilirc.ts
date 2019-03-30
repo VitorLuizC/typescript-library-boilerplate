@@ -20,6 +20,9 @@ const configuration: Configuration = {
     ],
     moduleName
   },
+  babel: {
+    minimal: true
+  },
   plugins: {
     'typescript2': {
       clean: true,
