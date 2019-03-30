@@ -1,5 +1,5 @@
 {
-  "name": "[name]",
+  "name": "[libraryName]",
   "version": "0.0.0",
   "description": "",
   "cdn": "dist/index.umd.js",
@@ -26,19 +26,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[author]/[name].git"
+    "url": "git+https://github.com/[repositoryOwner]/[repositoryName].git"
   },
   "keywords": [
     "typescript",
     "boilerplate",
     "library"
   ],
-  "author": "[author]",
+  "author": {
+    "name": "[authorFullName]"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/[author]/[name]/issues"
+    "url": "https://github.com/[repositoryOwner]/[repositoryName]/issues"
   },
-  "homepage": "https://github.com/[author]/[name]#readme",
+  "homepage": "https://github.com/[repositoryOwner]/[repositoryName]#readme",
   "ava": {
     "require": [
       "ts-node/register"

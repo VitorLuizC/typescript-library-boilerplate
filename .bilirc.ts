@@ -1,12 +1,4 @@
-import { name } from './package.json';
 import { Config as Configuration } from 'bili';
-
-const toUpperCase = (
-  _: string,
-  char: string,
-): string => char.toUpperCase();
-
-const moduleName = name.replace(/-(\w)/g, toUpperCase);
 
 const configuration: Configuration = {
   banner: true,
@@ -18,7 +10,7 @@ const configuration: Configuration = {
       'umd',
       'umd-min'
     ],
-    moduleName
+    moduleName: "[libraryCammelCaseName]"
   },
   babel: {
     minimal: true

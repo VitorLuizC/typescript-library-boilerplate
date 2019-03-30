@@ -1,6 +1,6 @@
 /*!
- * [name] v0.0.0
- * (c) [author]
+ * [libraryName] v0.0.0
+ * (c) [authorFullName]
  * Released under the MIT License.
  */
 (function (global, factory) {

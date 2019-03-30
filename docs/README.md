@@ -1,4 +1,4 @@
-#  [name]
+#  [libraryNameWithSpacesAndUpperCases]
 
 ## Index
 
