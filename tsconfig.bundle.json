@@ -8,9 +8,7 @@
 
     // Configuration for type declarations.
     "declaration": true,
-    "declarationDir": "types/",
+    "declarationDir": "types/"
   },
-  "include": [
-    "src/"
-  ]
+  "include": ["src/"]
 }

@@ -20,6 +20,5 @@ export type NumberParseable = (number | string | boolean) & {
  * ```
  * @param value - An `unknown` value to be checked.
  */
-export const isNumberParseable = (
-  value: unknown,
-): value is NumberParseable => !Number.isNaN(Number(value));
+export const isNumberParseable = (value: unknown): value is NumberParseable =>
+  !Number.isNaN(Number(value));

@@ -20,7 +20,10 @@
   },
   "scripts": {
     "doc": "typedoc src/index.ts",
-    "test": "ava",
+    "test": "yarn test:lint && yarn test:unit",
+    "test:lint": "prettier **/*.{ts,tsx,js,jsx,json} --check",
+    "test:unit": "ava",
+    "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
     "build": "bili",
     "prepare": "yarn doc && yarn build && yarn test"
   },
@@ -49,5 +52,8 @@
       "ts"
     ],
     "compileEnhancements": false
+  },
+  "dependencies": {
+    "prettier": "^1.18.2"
   }
 }
