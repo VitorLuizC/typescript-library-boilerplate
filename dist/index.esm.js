@@ -21,3 +21,4 @@
 var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
 
 export { isNumberParseable };
+//# sourceMappingURL=index.esm.js.map

@@ -25,3 +25,4 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
 
 exports.isNumberParseable = isNumberParseable;
+//# sourceMappingURL=index.js.map
