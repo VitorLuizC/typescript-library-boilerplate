@@ -6,7 +6,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global['[cammelCaseName]'] = {}));
+  (global = global || self, factory(global['[libraryCammelCaseName]'] = {}));
 }(this, function (exports) { 'use strict';
 
   /**
@@ -24,9 +24,7 @@
    * ```
    * @param value - An `unknown` value to be checked.
    */
-  var isNumberParseable = function isNumberParseable(value) {
-    return !Number.isNaN(Number(value));
-  };
+  var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
 
   exports.isNumberParseable = isNumberParseable;
 

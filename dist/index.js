@@ -22,8 +22,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
  * ```
  * @param value - An `unknown` value to be checked.
  */
-var isNumberParseable = function isNumberParseable(value) {
-  return !Number.isNaN(Number(value));
-};
+var isNumberParseable = function (value) { return !Number.isNaN(Number(value)); };
 
 exports.isNumberParseable = isNumberParseable;

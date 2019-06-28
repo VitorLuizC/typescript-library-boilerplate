@@ -1,27 +1,22 @@
+> ## [[libraryNameWithSpacesAndUpperCases]](README.md)
 
-#  [libraryNameWithSpacesAndUpperCases]
+### Index
 
-## Index
+#### Type aliases
 
-### Type aliases
+* [NumberParseable](README.md#numberparseable)
 
-* [NumberParseable](#numberparseable)
+#### Functions
 
-### Functions
-
-* [isNumberParseable](#isnumberparseable)
-
----
+* [isNumberParseable](README.md#const-isnumberparseable)
 
 ## Type aliases
 
-<a id="numberparseable"></a>
-
 ###  NumberParseable
 
-**Ƭ NumberParseable**: *`string` \| `number` \| `false` \| `true` & `object`*
+Ƭ **NumberParseable**: *string | number | false | true & object*
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d4e03f3/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/97b9fef/src/index.ts#L4)*
 
 A Branded Type for values parseable to number.
 
@@ -29,23 +24,20 @@ ___
 
 ## Functions
 
-<a id="isnumberparseable"></a>
+### `Const` isNumberParseable
 
-### `<Const>` isNumberParseable
+▸ **isNumberParseable**(`value`: unknown): *boolean*
 
-▸ **isNumberParseable**(value: *`unknown`*): `boolean`
-
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d4e03f3/src/index.ts#L23)*
+*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/97b9fef/src/index.ts#L23)*
 
 Check if value is parseable to number.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| value | `unknown` |
+Name | Type |
+------ | ------ |
+`value` | unknown |
 
-**Returns:** `boolean`
+**Returns:** *boolean*
 
 ___
-
