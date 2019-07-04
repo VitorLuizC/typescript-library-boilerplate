@@ -17,7 +17,7 @@
     "rollup-plugin-typescript2": "^0.21.2",
     "ts-node": "^8.3.0",
     "typedoc": "^0.14.2",
-    "typedoc-plugin-markdown": "^2.0.6",
+    "typedoc-plugin-markdown": "^2.0.8",
     "typescript": "^3.5.2"
   },
   "scripts": {
@@ -27,7 +27,7 @@
     "test:unit": "ava",
     "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
     "build": "bili",
-    "prepare": "yarn doc && yarn build && yarn test"
+    "prepublishOnly": "yarn doc && yarn build && yarn test"
   },
   "repository": {
     "type": "git",
