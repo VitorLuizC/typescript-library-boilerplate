@@ -29,7 +29,7 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 
 <script>
   // UMD module is exposed through the "[libraryCammelCaseName]" global variable.
-  console.log([cammelCaseName]);
+  console.log([libraryCammelCaseName]);
 </script>
 ```
 
