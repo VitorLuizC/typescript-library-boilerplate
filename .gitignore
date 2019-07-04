@@ -7,9 +7,10 @@
 # Node.js modules.
 node_modules/
 
-# NPM's lockfile.
+# NPM's lockfile & shrinkwrap.
 # We're using Yarn and it provides it's own lockfile.
-npm-lockfile.json
+package-lock.json
+npm-shrinkwrap.json
 
 # Log's files.
 *.log
