@@ -9,9 +9,11 @@
   "module": "dist/index.esm.js",
   "jsdelivr": "dist/index.umd.js",
   "umd:main": "dist/index.umd.js",
+  "dependencies": {},
   "devDependencies": {
     "ava": "^2.1.0",
     "bili": "^4.8.0",
+    "prettier": "^1.18.2",
     "rollup-plugin-typescript2": "^0.21.2",
     "ts-node": "^8.3.0",
     "typedoc": "^0.14.2",
@@ -52,8 +54,5 @@
       "ts"
     ],
     "compileEnhancements": false
-  },
-  "dependencies": {
-    "prettier": "^1.18.2"
   }
 }
