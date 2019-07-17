@@ -45,14 +45,5 @@
   "bugs": {
     "url": "https://github.com/[repositoryOwner]/[repositoryName]/issues"
   },
-  "homepage": "https://github.com/[repositoryOwner]/[repositoryName]#readme",
-  "ava": {
-    "require": [
-      "ts-node/register"
-    ],
-    "extensions": [
-      "ts"
-    ],
-    "compileEnhancements": false
-  }
+  "homepage": "https://github.com/[repositoryOwner]/[repositoryName]#readme"
 }
