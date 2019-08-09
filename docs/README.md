@@ -16,7 +16,7 @@
 
 Ƭ **NumberParseable**: *string | number | false | true & object*
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/20f2609/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/a420b4e/src/index.ts#L4)*
 
 A Branded Type for values parseable to number.
 
@@ -26,7 +26,7 @@ A Branded Type for values parseable to number.
 
 ▸ **isNumberParseable**(`value`: unknown): *boolean*
 
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/20f2609/src/index.ts#L23)*
+*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/a420b4e/src/index.ts#L23)*
 
 Check if value is parseable to number.
 
