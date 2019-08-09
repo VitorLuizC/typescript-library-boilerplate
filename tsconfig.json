@@ -12,16 +12,10 @@
     "alwaysStrict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitAny": true,
-    "noImplicitThis": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true,
-    "strictBindCallApply": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictPropertyInitialization": true
+    "strict": true
   },
   "include": [".bilirc.ts", "src/", "test/"]
 }
