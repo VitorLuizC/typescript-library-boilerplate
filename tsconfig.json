@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "lib": ["es2018"],
-    "target": "es2018",
+    "lib": ["es2019"],
+    "target": "es2019",
 
     // Configuration for module.
     "esModuleInterop": true,
