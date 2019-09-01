@@ -17,5 +17,5 @@
     "noUnusedParameters": true,
     "strict": true
   },
-  "include": [".bilirc.ts", "src/", "test/"]
+  "include": [".bilirc.ts", "src/"]
 }

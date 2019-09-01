@@ -11,11 +11,12 @@
   "umd:main": "dist/index.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "ava": "^2.2.0",
+    "@types/jest": "^24.0.18",
     "bili": "^4.8.1",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "rollup-plugin-typescript2": "^0.22.1",
-    "ts-node": "^8.3.0",
+    "ts-jest": "^24.0.2",
     "typedoc": "^0.15.0",
     "typedoc-plugin-markdown": "^2.1.1",
     "typescript": "^3.5.3"
@@ -24,7 +25,7 @@
     "doc": "typedoc src/index.ts",
     "test": "yarn test:lint && yarn test:unit",
     "test:lint": "prettier **/*.{ts,tsx,js,jsx,json} --check",
-    "test:unit": "ava",
+    "test:unit": "jest",
     "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
     "build": "bili",
     "prepublishOnly": "yarn doc && yarn build && yarn test"
