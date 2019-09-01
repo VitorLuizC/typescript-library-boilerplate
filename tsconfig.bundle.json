@@ -11,5 +11,5 @@
     "declarationDir": "types/"
   },
   "include": ["src/"],
-  "exclude": ["src/**/*.test.{ts,tsx}"]
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
 }
