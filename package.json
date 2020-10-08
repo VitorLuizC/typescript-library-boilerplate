@@ -23,12 +23,12 @@
   },
   "scripts": {
     "doc": "typedoc src/index.ts",
-    "test": "yarn test:lint && yarn test:unit",
+    "test": "npm run test:lint && npm run test:unit",
     "test:lint": "prettier **/*.{ts,tsx,js,jsx,json} --check",
     "test:unit": "jest",
     "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
     "build": "bili",
-    "prepublishOnly": "yarn doc && yarn build && yarn test"
+    "prepublishOnly": "npm run doc && npm run build && npm run test"
   },
   "repository": {
     "type": "git",
