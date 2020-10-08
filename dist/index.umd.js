@@ -6,8 +6,8 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
   typeof define === 'function' && define.amd ? define(['exports'], factory) :
-  (global = global || self, factory(global['[libraryCammelCaseName]'] = {}));
-}(this, function (exports) { 'use strict';
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['[libraryCammelCaseName]'] = {}));
+}(this, (function (exports) { 'use strict';
 
   /**
    * Check if value is parseable to number.
@@ -30,5 +30,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));
 //# sourceMappingURL=index.umd.js.map

@@ -1,6 +1,8 @@
 **[[libraryNameWithSpacesAndUpperCases]](README.md)**
 
-[Globals](README.md)
+> Globals
+
+# [libraryNameWithSpacesAndUpperCases]
 
 ## Index
 
@@ -10,32 +12,45 @@
 
 ### Functions
 
-* [isNumberParseable](README.md#const-isnumberparseable)
+* [isNumberParseable](README.md#isnumberparseable)
 
 ## Type aliases
 
-###  NumberParseable
+### NumberParseable
 
-Ƭ **NumberParseable**: *string | number | false | true & object*
+Ƭ  **NumberParseable**: number \| string \| boolean & { isNumberParseble: unique symbol  }
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/696db7f/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e3a5f2f/src/index.ts#L4)*
 
 A Branded Type for values parseable to number.
 
 ## Functions
 
-### `Const` isNumberParseable
+### isNumberParseable
 
-▸ **isNumberParseable**(`value`: unknown): *boolean*
+▸ `Const`**isNumberParseable**(`value`: unknown): value is NumberParseable
 
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/696db7f/src/index.ts#L23)*
+*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e3a5f2f/src/index.ts#L23)*
 
 Check if value is parseable to number.
 
-**Parameters:**
+**`example`** ```ts
+isNumberParseable('AAAA');
+//=> false
+
+isNumberParseable('100');
+//=> true
+
+if (!isNumberParseable(value))
+  throw new Error('Value can\'t be parseable to `Number`.')
+return Number(value);
+```
+@param value - An `unknown` value to be checked.
+
+#### Parameters:
 
 Name | Type |
 ------ | ------ |
 `value` | unknown |
 
-**Returns:** *boolean*
+**Returns:** value is NumberParseable
