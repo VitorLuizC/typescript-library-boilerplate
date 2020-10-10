@@ -1,15 +1,19 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    // Configuration for build.
-    "newLine": "LF",
-    "noEmitOnError": true,
-    "outDir": "dist/",
+    // Transpilation settings.
+    "module": "ES2015",
+    "target": "ES5",
 
-    // Configuration for type declarations.
+    // Output settings.
+    "charset": "utf-8",
+    "newLine": "LF",
+    "sourceMap": true,
+
+    // Type declaration settings.
     "declaration": true,
-    "declarationDir": "types/"
+    "declarationDir": "types/",
+    "declarationMap": true
   },
-  "include": ["src/"],
-  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx"]
+  "exclude": ["./src/**/*.test.ts", "./src/**/*.test.tsx"]
 }

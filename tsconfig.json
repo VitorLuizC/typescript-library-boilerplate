@@ -1,21 +1,32 @@
 {
   "compilerOptions": {
-    "lib": ["es2019"],
-    "target": "es2019",
+    // React.js JSX settings.
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "jsxFragmentFactory": "React.Fragment",
 
-    // Configuration for module.
+    // Module settings.
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "isolatedModules": true,
     "moduleResolution": "node",
     "resolveJsonModule": true,
 
-    // Configuration for type strictness.
+    // Strictness and quality settings.
     "alwaysStrict": true,
     "forceConsistentCasingInFileNames": true,
+    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "strict": true
+    "strict": true,
+
+    // Type-checking settings.
+    "lib": ["ES2020"],
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "types": ["jest"]
   },
-  "include": [".bilirc.ts", "src/"]
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"]
 }
