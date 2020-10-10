@@ -20,7 +20,7 @@
 
 Ƭ  **NumberParseable**: number \| string \| boolean & { isNumberParseble: unique symbol  }
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e3a5f2f/src/index.ts#L4)*
+*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L4)*
 
 A Branded Type for values parseable to number.
 
@@ -30,7 +30,7 @@ A Branded Type for values parseable to number.
 
 ▸ `Const`**isNumberParseable**(`value`: unknown): value is NumberParseable
 
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e3a5f2f/src/index.ts#L23)*
+*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L23)*
 
 Check if value is parseable to number.
 
