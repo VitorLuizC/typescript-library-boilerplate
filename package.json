@@ -12,9 +12,10 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^26.0.1",
-    "bili": "^5.0.5",
     "jest": "^26.5.2",
     "prettier": "^2.1.2",
+    "rollup": "^2.29.0",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.27.3",
     "ts-jest": "^26.4.1",
     "typedoc": "^0.19.2",
@@ -27,7 +28,7 @@
     "test:lint": "prettier **/*.{ts,tsx,js,jsx,json} --check",
     "test:unit": "jest",
     "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
-    "build": "bili",
+    "build": "rollup --config ./rollup.config.js",
     "prepublishOnly": "npm run doc && npm run build && npm run test"
   },
   "repository": {
