@@ -1,6 +1,7 @@
-module.exports = {
-  roots: ['<rootDir>/src'],
-  transform: {
-    '^.+\\.tsx?$': 'ts-jest',
-  },
+// @ts-check
+
+const configuration = {
+  preset: 'ts-jest',
 };
+
+module.exports = configuration;

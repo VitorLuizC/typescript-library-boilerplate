@@ -58,7 +58,7 @@ const options = {
     typescript2({
       clean: true,
       useTsconfigDeclarationDir: true,
-      tsconfig: './tsconfig.bundle.json'
+      tsconfig: './tsconfig.bundle.json',
     }),
   ],
 };
