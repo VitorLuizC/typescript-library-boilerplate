@@ -1,58 +1,64 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 
-const { readdir, readFile, unlink, writeFile } = require('fs/promises');
-const { resolve } = require('path');
-const { createInterface } = require('readline');
+const fs = require('fs/promises');
+const path = require('path');
+const readline = require('readline');
 
-const ENCODING = 'utf-8';
-
-const EXCLUDED_PATHS = ['.git', 'setup.js', 'node_modules'];
-
-const resolveToFiles = (directory) => (dirent) => {
-  const direntPath = resolve(directory, dirent.name);
-  if (!EXCLUDED_PATHS.includes(dirent.name) && dirent.isFile())
-    return [direntPath];
-  if (!EXCLUDED_PATHS.includes(dirent.name) && dirent.isDirectory())
-    return getFiles(direntPath);
+const resolveToFiles = (directory) => async (dirent) => {
+  if (
+    dirent.name === '.git' ||
+    dirent.name === 'setup.js' ||
+    dirent.name === 'node_modules'
+  )
+    return [];
+  if (dirent.isFile()) return [path.resolve(directory, dirent.name)];
+  if (dirent.isDirectory())
+    return await getFiles(path.resolve(directory, dirent.name));
   return [];
 };
 
-const getFiles = (directory) =>
-  readdir(directory, {
-    encoding: ENCODING,
+const getFiles = async (directory) => {
+  const filesWithTypes = await fs.readdir(directory, {
+    encoding: 'utf-8',
     withFileTypes: true,
-  })
-    .then((filesWithTypes) => filesWithTypes.map(resolveToFiles(directory)))
-    .then(Promise.all)
-    .then((files) => files.flat(1));
+  });
 
-const replaceInFile = (matcher, replacer) => (path) =>
-  readFile(path, { encoding: ENCODING })
-    .then((contents) => contents.replace(matcher, replacer))
-    .then((contents) => writeFile(path, contents, ENCODING));
+  const resolutions = filesWithTypes.map(resolveToFiles(directory));
 
-const readline = createInterface({
+  const files = await Promise.all(resolutions);
+
+  return files.flat(1);
+};
+
+const gettingFiles = getFiles(path.resolve(__dirname));
+
+const replaceInFile = (matcher, replacer) => async (path) => {
+  const contents = await fs.readFile(path, { encoding: 'utf-8' });
+  await fs.writeFile(path, contents.replace(matcher, replacer));
+};
+
+const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
-const replaceVariable = (variable, value) =>
-  getFiles(resolve(__dirname))
-    .then((files) => {
-      const matcher = new RegExp(`\\[${variable}\\]`, 'g');
-      return files.map(replaceInFile(matcher, value));
-    })
-    .then(Promise.all);
+const replaceVariable = async (variable, value) => {
+  const files = await gettingFiles;
+
+  const matcher = new RegExp(`\\[${variable}\\]`, 'g');
+
+  await Promise.all(files.map(replaceInFile(matcher, value)));
+};
 
 const fillTemplateVariable = (variable, question, defaultValue = '') =>
   new Promise((resolve) => {
-    readline.question(question, async (receivedValue) => {
+    rl.question(question, async (receivedValue) => {
       const value = receivedValue?.trim() || defaultValue;
 
-      await replaceVariable(variable, value);
+      replaceVariable(variable, value);
 
-      readline.write(`Replaced ${variable} to "${value}".\n`);
+      rl.write(`Replaced ${variable} to "${value}".\n`);
 
       resolve();
     });
@@ -113,10 +119,10 @@ What is your full name? (used in MIT License)
     ),
   )
   .then(() => {
-    unlink(resolve(__filename));
-    readline.close();
+    rl.close();
+    fs.unlink(path.resolve(__filename));
   })
   .catch((error) => {
     console.error(error?.message ?? error ?? 'Unknown error.');
-    readline.close();
+    rl.close();
   });
