@@ -20,3 +20,4 @@ export declare type NumberParseable = (number | string | boolean) & {
  * @param value - An `unknown` value to be checked.
  */
 export declare const isNumberParseable: (value: unknown) => value is NumberParseable;
+//# sourceMappingURL=index.d.ts.map
