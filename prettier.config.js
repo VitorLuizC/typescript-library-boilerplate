@@ -1,4 +1,5 @@
 // @ts-check
+/* eslint-env node */
 
 /**
  * An object with Prettier.js options.

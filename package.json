@@ -13,6 +13,11 @@
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "@types/prettier": "^2.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0",
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "jest": "^26.5.2",
     "prettier": "^2.1.2",
     "rollup": "^2.29.0",
@@ -26,9 +31,9 @@
   "scripts": {
     "doc": "typedoc src/index.ts",
     "test": "npm run test:lint && npm run test:unit",
-    "test:lint": "prettier **/*.{ts,tsx,js,jsx,json} --check",
+    "test:lint": "eslint \"*/**/*.{ts,js,json}\"",
     "test:unit": "jest",
-    "lint": "prettier **/*.{ts,tsx,js,jsx,json} --write",
+    "lint": "eslint \"*/**/*.{ts,js,json}\" --fix",
     "build": "rollup --config ./rollup.config.js",
     "prepublishOnly": "npm run doc && npm run build && npm run test"
   },
