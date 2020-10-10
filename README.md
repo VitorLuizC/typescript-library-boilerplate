@@ -28,8 +28,8 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 <script src="https://cdn.jsdelivr.net/npm/[libraryName]"></script>
 
 <script>
-  // UMD module is exposed through the "[libraryCammelCaseName]" global variable.
-  console.log([libraryCammelCaseName]);
+  // UMD module is exposed through the "[libraryCamelCaseName]" global variable.
+  console.log([libraryCamelCaseName]);
 </script>
 ```
 
