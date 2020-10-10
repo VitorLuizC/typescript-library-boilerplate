@@ -106,6 +106,15 @@ What will be this repository name on GitHub?
 > `,
     ),
   )
+  .then(() =>
+    fillTemplateVariable(
+      'authorFullName',
+      `
+What is your full name? (used in MIT License)
+> `,
+      '',
+    ),
+  )
   .then(() => {
     rl.close();
     fs.unlink(path.resolve(__filename));
