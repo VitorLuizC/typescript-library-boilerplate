@@ -1,36 +1,32 @@
-**[[libraryNameWithSpacesAndUpperCases]](README.md)**
-
-> Globals
+[libraryNameWithSpacesAndUpperCases]
 
 # [libraryNameWithSpacesAndUpperCases]
 
-## Index
+## Table of contents
 
 ### Type aliases
 
-* [NumberParseable](README.md#numberparseable)
+- [NumberParseable](README.md#numberparseable)
 
 ### Functions
 
-* [isNumberParseable](README.md#isnumberparseable)
+- [isNumberParseable](README.md#isnumberparseable)
 
 ## Type aliases
 
 ### NumberParseable
 
-Ƭ  **NumberParseable**: number \| string \| boolean & { isNumberParseble: unique symbol  }
-
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L4)*
+Ƭ **NumberParseable**: *number* \| *string* \| *boolean* & { `isNumberParseble`: unique *symbol*  }
 
 A Branded Type for values parseable to number.
+
+Defined in: [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef8277b/src/index.ts#L4)
 
 ## Functions
 
 ### isNumberParseable
 
-▸ `Const`**isNumberParseable**(`value`: unknown): value is NumberParseable
-
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/bf4667f/src/index.ts#L23)*
+▸ `Const`**isNumberParseable**(`value`: *unknown*): value is string \| number \| boolean & object
 
 Check if value is parseable to number.
 
@@ -50,7 +46,9 @@ return Number(value);
 #### Parameters:
 
 Name | Type |
------- | ------ |
-`value` | unknown |
+:------ | :------ |
+`value` | *unknown* |
 
-**Returns:** value is NumberParseable
+**Returns:** value is string \| number \| boolean & object
+
+Defined in: [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef8277b/src/index.ts#L23)
