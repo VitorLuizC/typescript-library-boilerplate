@@ -41,6 +41,14 @@ const options = {
       format: 'commonjs',
     }),
     createOutputOptions({
+      file: './dist/index.cjs',
+      format: 'commonjs',
+    }),
+    createOutputOptions({
+      file: './dist/index.mjs',
+      format: 'esm',
+    }),
+    createOutputOptions({
       file: './dist/index.esm.js',
       format: 'esm',
     }),
