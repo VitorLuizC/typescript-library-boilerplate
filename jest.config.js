@@ -1,8 +1,12 @@
 // @ts-check
 /* eslint-env node */
 
-const configuration = {
+/**
+ * An object with Jest options.
+ * @type {import('@jest/types').Config.InitialOptions}
+ */
+const options = {
   preset: 'ts-jest',
 };
 
-module.exports = configuration;
+module.exports = options;
