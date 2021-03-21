@@ -20,7 +20,7 @@
 
 A Branded Type for values parseable to number.
 
-Defined in: [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef8277b/src/index.ts#L4)
+Defined in: [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/af1fd23/src/index.ts#L4)
 
 ## Functions
 
@@ -51,4 +51,4 @@ Name | Type |
 
 **Returns:** value is string \| number \| boolean & object
 
-Defined in: [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef8277b/src/index.ts#L23)
+Defined in: [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/af1fd23/src/index.ts#L23)
