@@ -16,17 +16,19 @@
 
 ### NumberParseable
 
-Ƭ **NumberParseable**: *number* \| *string* \| *boolean* & { `isNumberParseble`: unique *symbol*  }
+Ƭ **NumberParseable**: `number` \| `string` \| `boolean` & { `isNumberParseble`: unique `symbol`  }
 
 A Branded Type for values parseable to number.
 
-Defined in: [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/af1fd23/src/index.ts#L4)
+#### Defined in
+
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef1e1c9/src/index.ts#L4)
 
 ## Functions
 
 ### isNumberParseable
 
-▸ `Const`**isNumberParseable**(`value`: *unknown*): value is string \| number \| boolean & object
+▸ `Const` **isNumberParseable**(`value`): value is NumberParseable
 
 Check if value is parseable to number.
 
@@ -43,12 +45,16 @@ return Number(value);
 ```
 @param value - An `unknown` value to be checked.
 
-#### Parameters:
+#### Parameters
 
-Name | Type |
-:------ | :------ |
-`value` | *unknown* |
+| Name | Type |
+| :------ | :------ |
+| `value` | `unknown` |
 
-**Returns:** value is string \| number \| boolean & object
+#### Returns
 
-Defined in: [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/af1fd23/src/index.ts#L23)
+value is NumberParseable
+
+#### Defined in
+
+[index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/ef1e1c9/src/index.ts#L23)
