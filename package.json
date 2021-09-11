@@ -53,11 +53,7 @@
     "type": "git",
     "url": "git+https://github.com/[repositoryOwner]/[repositoryName].git"
   },
-  "keywords": [
-    "typescript",
-    "boilerplate",
-    "library"
-  ],
+  "keywords": [],
   "author": {
     "name": "[authorFullName]"
   },
