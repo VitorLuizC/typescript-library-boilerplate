@@ -7,7 +7,8 @@ export type NumberParseable = (number | string | boolean) & {
 
 /**
  * Check if value is parseable to number.
- * @example ```ts
+ * @example
+ * ```js
  * isNumberParseable('AAAA');
  * //=> false
  *
