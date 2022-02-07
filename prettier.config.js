@@ -6,7 +6,6 @@
  * @type {import('prettier').Options}
  */
 const options = {
-  // @ts-expect-error because '@types/prettier' doesn't have this option yet.
   bracketSameLine: true,
   quoteProps: 'consistent',
   singleQuote: true,
