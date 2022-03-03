@@ -22,13 +22,13 @@ A Branded Type for values parseable to number.
 
 #### Defined in
 
-[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/81bf970/src/index.ts#L4)
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/08567c9/src/index.ts#L4)
 
 ## Functions
 
 ### isNumberParseable
 
-▸ `Const` **isNumberParseable**(`value`): value is NumberParseable
+▸ **isNumberParseable**(`value`): value is NumberParseable
 
 Check if value is parseable to number.
 
@@ -57,4 +57,4 @@ value is NumberParseable
 
 #### Defined in
 
-[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/81bf970/src/index.ts#L24)
+[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/08567c9/src/index.ts#L24)
