@@ -12,19 +12,19 @@ node_modules/
 npm-shrinkwrap.json
 
 # Yarn's lockfile, Plug'n'Play, folder and settings.
-# We're using NPM and it provide its own lockfile and settings.
+# We're using npm, and it provides its lockfile and settings.
 yarn.lock
 .pnp.*
 .yarn/
 .yarnrc
 .yarnrc.yaml
 
-# PNPM's lockfile, workspaces and hooks.
-# We're using NPM and it provide its own lockfile and settings.
+# pnpm's lockfile, workspace definitions and hooks.
+# We're using npm, and it provides its lockfile and settings.
 pnpm-lock.yaml
-pnpm-workspaces.yaml
+pnpm-workspace.yaml
 pnpmfile.js
 
-# Log's files.
+# Log files.
 *.log
 *.log.*
