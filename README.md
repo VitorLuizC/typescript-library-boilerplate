@@ -1,5 +1,6 @@
 # [libraryNameWithSpacesAndUpperCases]
 
+[![Continuous Integrations](https://github.com/[repositoryOwner]/[repositoryName]/actions/workflows/continuous-integrations.yaml/badge.svg?branch=main)](https://github.com/[repositoryOwner]/[repositoryName]/actions/workflows/continuous-integrations.yaml)
 [![Build Status](https://travis-ci.org/[repositoryOwner]/[repositoryName].svg?branch=master)](https://travis-ci.org/[repositoryOwner]/[repositoryName])
 [![License](https://badgen.net/github/license/[repositoryOwner]/[repositoryName])](./LICENSE)
 [![Library minified size](https://badgen.net/bundlephobia/min/[libraryName])](https://bundlephobia.com/result?p=[libraryName])
