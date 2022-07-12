@@ -4,7 +4,7 @@
 
 ## Table of contents
 
-### Type aliases
+### Type Aliases
 
 - [NumberParseable](README.md#numberparseable)
 
@@ -12,7 +12,7 @@
 
 - [isNumberParseable](README.md#isnumberparseable)
 
-## Type aliases
+## Type Aliases
 
 ### NumberParseable
 
@@ -22,7 +22,7 @@ A Branded Type for values parseable to number.
 
 #### Defined in
 
-[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e351731/src/index.ts#L4)
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d232a15/src/index.ts#L4)
 
 ## Functions
 
@@ -32,7 +32,8 @@ A Branded Type for values parseable to number.
 
 Check if value is parseable to number.
 
-**`example`**
+**`Example`**
+
 ```js
 isNumberParseable('AAAA');
 //=> false
@@ -54,7 +55,3 @@ return Number(value);
 #### Returns
 
 value is NumberParseable
-
-#### Defined in
-
-[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/e351731/src/index.ts#L24)
