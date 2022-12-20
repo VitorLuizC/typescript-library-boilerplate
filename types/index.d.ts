@@ -1,7 +1,7 @@
 /**
  * A Branded Type for values parseable to number.
  */
-export declare type NumberParseable = (number | string | boolean) & {
+export type NumberParseable = (number | string | boolean) & {
     readonly isNumberParseble: unique symbol;
 };
 /**

@@ -22,7 +22,7 @@ A Branded Type for values parseable to number.
 
 #### Defined in
 
-[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d232a15/src/index.ts#L4)
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/4dad03d/src/index.ts#L4)
 
 ## Functions
 
@@ -55,3 +55,7 @@ return Number(value);
 #### Returns
 
 value is NumberParseable
+
+#### Defined in
+
+[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/4dad03d/src/index.ts#L24)
