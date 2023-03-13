@@ -1,0 +1,41 @@
+# Unnececery files and folders that should be excluded
+# from the package when publishing to NPM package registry.
+
+# Editor configs.
+.editorconfig
+.idea
+.vscode
+
+# Linters and formatters.
+.jscsrc
+.jshintrc
+.eslintignore
+.eslintrc*
+.prettierignore
+prettier.config.js
+
+# Source.
+/src
+
+# Docs.
+/docs
+typedoc.json
+
+# Tests.
+coverage
+jest.config.js
+**/*.test.ts
+
+# Build configs.
+rollup.config.mjs
+tsconfig.bundle.json
+tsconfig.json
+
+# Log files.
+*.log
+*.log.*
+
+# Others.
+.gitattributes
+.gitignore
+.github
