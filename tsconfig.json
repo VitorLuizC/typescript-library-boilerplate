@@ -8,7 +8,7 @@
     // Module settings.
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "isolatedModules": true,
+    "module": "ES2022",
     "moduleResolution": "node",
     "resolveJsonModule": true,
 
@@ -16,7 +16,6 @@
     "alwaysStrict": true,
     "exactOptionalPropertyTypes": true,
     "forceConsistentCasingInFileNames": true,
-    "importsNotUsedAsValues": "error",
     "noFallthroughCasesInSwitch": true,
     "noImplicitOverride": true,
     "noImplicitReturns": true,
@@ -25,6 +24,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "strict": true,
+    "verbatimModuleSyntax": true,
 
     // Type-checking settings.
     "lib": ["ES2020"],

@@ -6,8 +6,6 @@
 
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 /**
  * Check if value is parseable to number.
  * @example

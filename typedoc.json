@@ -1,7 +1,7 @@
 {
   "out": "./docs",
   "name": "[libraryNameWithSpacesAndUpperCases]",
-  "theme": "markdown",
+  "plugin": ["typedoc-plugin-markdown"],
   "readme": "none",
   "tsconfig": "./tsconfig.bundle.json"
 }

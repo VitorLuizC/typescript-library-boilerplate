@@ -1,0 +1,18 @@
+Package                           Current   Wanted  Latest  Location                                       Depended by
+@types/eslint                      8.4.10   8.44.3  8.44.3  node_modules/@types/eslint                     typescript-library-boilerplate
+@types/jest                        29.2.4   29.5.5  29.5.5  node_modules/@types/jest                       typescript-library-boilerplate
+@types/prettier                     2.7.2    2.7.3   3.0.0  node_modules/@types/prettier                   typescript-library-boilerplate
+@typescript-eslint/eslint-plugin   5.47.0   5.62.0   6.7.4  node_modules/@typescript-eslint/eslint-plugin  typescript-library-boilerplate
+@typescript-eslint/parser          5.47.0   5.62.0   6.7.4  node_modules/@typescript-eslint/parser         typescript-library-boilerplate
+eslint                             8.30.0   8.50.0  8.50.0  node_modules/eslint                            typescript-library-boilerplate
+eslint-config-prettier              8.5.0   8.10.0   9.0.0  node_modules/eslint-config-prettier            typescript-library-boilerplate
+eslint-plugin-prettier              4.2.1    4.2.1   5.0.0  node_modules/eslint-plugin-prettier            typescript-library-boilerplate
+jest                               29.3.1   29.7.0  29.7.0  node_modules/jest                              typescript-library-boilerplate
+prettier                            2.8.1    2.8.8   3.0.3  node_modules/prettier                          typescript-library-boilerplate
+rollup                             2.79.1   2.79.1  3.29.4  node_modules/rollup                            typescript-library-boilerplate
+rollup-plugin-typescript2          0.34.1   0.34.1  0.36.0  node_modules/rollup-plugin-typescript2         typescript-library-boilerplate
+ts-jest                            29.0.3   29.1.1  29.1.1  node_modules/ts-jest                           typescript-library-boilerplate
+ts-jest-resolver                    2.0.0    2.0.1   2.0.1  node_modules/ts-jest-resolver                  typescript-library-boilerplate
+typedoc                           0.23.23  0.23.28  0.25.1  node_modules/typedoc                           typescript-library-boilerplate
+typedoc-plugin-markdown            3.14.0   3.16.0  3.16.0  node_modules/typedoc-plugin-markdown           typescript-library-boilerplate
+typescript                          4.9.4    4.9.5   5.2.2  node_modules/typescript                        typescript-library-boilerplate

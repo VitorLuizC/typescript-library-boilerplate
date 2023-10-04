@@ -2,11 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     // Transpilation settings.
-    "module": "ES2020",
+    "module": "ES2022",
     "target": "ES5",
 
     // Output settings.
-    "charset": "utf-8",
     "newLine": "LF",
     "sourceMap": true,
 

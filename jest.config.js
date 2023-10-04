@@ -3,11 +3,19 @@
 
 /**
  * An object with Jest options.
- * @type {import('@jest/types').Config.InitialOptions}
+ * @type {import('ts-jest').JestConfigWithTsJest}
  */
 const options = {
-  preset: 'ts-jest',
-  resolver: 'ts-jest-resolver',
+  transform: {
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+        useESM: true
+      },
+    ],
+  },
+  resolver: 'ts-jest-resolver'
 };
 
 module.exports = options;
