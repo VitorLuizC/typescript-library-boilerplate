@@ -1,11 +1,8 @@
 // @ts-check
 
-import { readFile } from 'node:fs/promises';
-
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import typescript2 from 'rollup-plugin-typescript2';
-
-const packageJSON = JSON.parse(await readFile('./package.json', 'utf-8'));
+import packageJSON from './package.json' assert { type: 'json' };
 
 /**
  * Comment with library information to be appended in the generated bundles.
