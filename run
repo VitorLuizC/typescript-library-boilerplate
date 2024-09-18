@@ -1,0 +1,85 @@
+#!/bin/bash
+
+set -o errexit
+
+if [ -d "./node_modules/.bin" ]; then
+  export PATH="./node_modules/.bin:$PATH"
+fi
+
+function setup() {
+  echo -e "🔄 updating asdf…\n"
+  asdf update
+
+  echo -e ""
+  echo -e "🔄 updating asdf's plugins…\n"
+  asdf plugin update nodejs
+
+  echo -e ""
+  echo -e "⬇️ installing asdf's packages…\n"
+  asdf install
+
+  echo -e ""
+  echo -e "🔄 updating npm…\n"
+  npm up npm --global
+
+  echo -e ""
+  echo -e "⬇️ installing packages with npm…\n"
+  npm ci
+}
+
+function cleanup() {
+  echo -e "🗑️ deleting './node_modules' folder…\n"
+  rm -rf ./node_modules
+
+  echo -e ""
+  echo -e "🗑️ deleting './package-lock.json' file…\n"
+  rm ./package-lock.json
+
+  echo -e ""
+  echo -e "⬇️ installing packages with npm…\n"
+  npm install
+}
+
+function doc() {
+  echo -e "🤖 generating documentation with Typedoc…\n"
+  typedoc "./src/index.ts"
+}
+
+function test() {
+  echo -e "🧪 executing unit tests with Jest…\n"
+  jest
+}
+
+function lint() {
+  echo -e "🕵 linting source code with ESLint…\n"
+  eslint "*/**/*.{ts,js,json}"
+}
+
+function autofix() {
+  echo -e "👨‍🔧 automatically fixing source code with ESLint…\n"
+  eslint "*/**/*.{ts,js,json}" --fix
+}
+
+function bundle() {
+  echo -e "📦 bundling source code with Rollup…\n"
+  rollup --config ./rollup.config.mjs
+}
+
+function prepublish-only() {
+  echo -e "▶ executing 'doc' command…\n"
+  bash run doc
+
+  echo ""
+  echo -e "▶ executing 'lint' command…\n"
+  bash run lint
+
+  echo ""
+  echo -e "▶ executing 'test' command…\n"
+  bash run test
+
+  echo ""
+  echo -e "▶ executing 'bundle' command…\n"
+  bash run bundle
+}
+
+eval "$@"

@@ -44,12 +44,8 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
-    "doc": "typedoc src/index.ts",
-    "test": "jest",
-    "lint": "eslint \"*/**/*.{ts,js,json}\"",
-    "lint:fix": "eslint \"*/**/*.{ts,js,json}\" --fix",
-    "build": "rollup --config ./rollup.config.mjs",
-    "prepublishOnly": "npm run doc && npm run lint && npm run test && npm run build"
+    "test": "bash run test",
+    "prepublishOnly": "bash run prepublish-only"
   },
   "repository": {
     "type": "git",

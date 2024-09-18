@@ -16,13 +16,13 @@
 
 ### NumberParseable
 
-Ƭ **NumberParseable**: `number` \| `string` \| `boolean` & { `isNumberParseble`: unique `symbol`  }
+Ƭ **NumberParseable**: `number` \| `string` \| `boolean` & \{ `isNumberParseble`: unique `symbol`  }
 
 A Branded Type for values parseable to number.
 
 #### Defined in
 
-[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/c48c9c1/src/index.ts#L4)
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d3bf74861b541a3d38c99355f79a0fde1127a9f7/src/index.ts#L4)
 
 ## Functions
 
@@ -58,4 +58,4 @@ return Number(value);
 
 #### Defined in
 
-[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/c48c9c1/src/index.ts#L24)
+[index.ts:24](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/d3bf74861b541a3d38c99355f79a0fde1127a9f7/src/index.ts#L24)
