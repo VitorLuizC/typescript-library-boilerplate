@@ -15,8 +15,8 @@ jobs:
       - name: 'Setup Node.js and npm'
         uses: './.github/actions/setup'
 
-      - name: 'Execute the lint script'
-        run: 'npm run lint'
+      - name: 'Execute the check scripts'
+        run: 'bash run check'
 
 
   test:
@@ -30,7 +30,7 @@ jobs:
         uses: './.github/actions/setup'
 
       - name: 'Execute the test script'
-        run: 'npm run test'
+        run: 'bash run test'
 
   bundle:
     name: 'Bundle package with Rollup.js'
@@ -42,5 +42,5 @@ jobs:
       - name: 'Setup Node.js and npm'
         uses: './.github/actions/setup'
 
-      - name: 'Execute the build script'
-        run: 'npm run build'
+      - name: 'Execute the bundle script'
+        run: 'bash run bundle'
