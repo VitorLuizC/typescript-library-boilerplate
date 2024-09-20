@@ -40,6 +40,12 @@ function cleanup() {
   npm install
 }
 
+function execute() {
+  echo -e "▶ executing '$1' script…\n"
+  bash run $1 | sed 's/^/  /'
+  echo -e "\n✅ '$1' script was completed!"
+}
+
 function doc() {
   echo -e "🤖 generating documentation with Typedoc…\n"
   typedoc "./src/index.ts"
@@ -55,13 +61,15 @@ function type-check() {
   tsc --project ./tsconfig.json --noEmit
 }
 
-function check() {
-  echo -e "🔎 checking code style with ESLint…\n"
+function lint() {
+  echo -e "🔎 linting code style with ESLint and Prettier…\n"
   eslint
+}
 
-  echo -e "▶ executing 'type-check' command…\n"
+function check() {
+  execute lint
   echo ""
-  bash run type-check
+  execute type-check
 }
 
 function autofix() {
@@ -75,20 +83,13 @@ function bundle() {
 }
 
 function prepublish-only() {
-  echo -e "▶ executing 'doc' command…\n"
-  bash run doc
-
+  execute doc
   echo ""
-  echo -e "▶ executing 'check' command…\n"
-  bash run check
-
+  execute check
   echo ""
-  echo -e "▶ executing 'test' command…\n"
-  bash run test
-
+  execute test
   echo ""
-  echo -e "▶ executing 'bundle' command…\n"
-  bash run bundle
+  execute bundle
 }
 
 eval "$@"
