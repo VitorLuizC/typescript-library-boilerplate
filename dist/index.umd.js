@@ -26,9 +26,7 @@
    * ```
    * @param value - An `unknown` value to be checked.
    */
-  var isNumberParseable = function (value) {
-      return !Number.isNaN(Number(value));
-  };
+  const isNumberParseable = (value) => !Number.isNaN(Number(value));
 
   exports.isNumberParseable = isNumberParseable;
 

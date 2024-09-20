@@ -1,18 +1,23 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    // Transpilation settings.
-    "module": "ES2022",
-    "target": "ES5",
-
     // Output settings.
-    "newLine": "LF",
+    "newLine": "lf",
+    "outDir": "./dist",
     "sourceMap": true,
+    "target": "es2015", // It's a JavaScript from almost 10 years ago. If your
+                        // consumer can't support it, it's theirs problem not
+                        // yours.
 
     // Type declaration settings.
     "declaration": true,
-    "declarationDir": "types/",
-    "declarationMap": true
+    "declarationDir": "./types",
+    "declarationMap": true,
+    "isolatedDeclarations": true,
+
+    // Type-checking settings.
+    "skipLibCheck": false,
+    "types": []
   },
-  "exclude": ["./src/**/*.test.ts", "./src/**/*.test.tsx"]
+  "exclude": ["./src/**/*.test.ts"]
 }

@@ -50,9 +50,18 @@ function test() {
   jest
 }
 
-function lint() {
-  echo -e "🕵 linting source code with ESLint…\n"
+function type-check() {
+  echo -e "🔍 type checking with TypeScript…\n"
+  tsc --project ./tsconfig.json --noEmit
+}
+
+function check() {
+  echo -e "🔎 checking code style with ESLint…\n"
   eslint "*/**/*.{ts,js,json}"
+
+  echo -e "▶ executing 'type-check' command…\n"
+  echo ""
+  bash run type-check
 }
 
 function autofix() {
@@ -70,8 +79,8 @@ function prepublish-only() {
   bash run doc
 
   echo ""
-  echo -e "▶ executing 'lint' command…\n"
-  bash run lint
+  echo -e "▶ executing 'check' command…\n"
+  bash run check
 
   echo ""
   echo -e "▶ executing 'test' command…\n"

@@ -9,13 +9,18 @@ const options = {
   transform: {
     '^.+\\.tsx?$': [
       'ts-jest',
+      /**
+       * These extra configuration is required because 'ts-jest' doesn't support
+       * 'verbatimModuleSyntax' that was enabled in our './tsconfig.json'.
+       * @see {@link https://github.com/kulshekhar/ts-jest/issues/4081}
+       */
       {
         isolatedModules: true,
-        useESM: true
+        useESM: true,
       },
     ],
   },
-  resolver: 'ts-jest-resolver'
+  resolver: 'ts-jest-resolver',
 };
 
 module.exports = options;
