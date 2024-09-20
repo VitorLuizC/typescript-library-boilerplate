@@ -18,4 +18,4 @@ A Branded Type for values parseable to number.
 
 ## Defined in
 
-[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/7ffcc2c186f5de3d3542411bd6552bb931854097/src/index.ts#L4)
+[index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/10d5bd1f65c001cd2fb2a664ffc160a25c2a95f0/src/index.ts#L4)
