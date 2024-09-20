@@ -1,5 +1,6 @@
-/* eslint-env node */
-/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-disable */
+
+// @ts-nocheck
 
 const fs = require('fs/promises');
 const path = require('path');

@@ -57,7 +57,7 @@ function type-check() {
 
 function check() {
   echo -e "🔎 checking code style with ESLint…\n"
-  eslint "*/**/*.{ts,js,json}"
+  eslint
 
   echo -e "▶ executing 'type-check' command…\n"
   echo ""

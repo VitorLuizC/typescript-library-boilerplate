@@ -1,5 +1,6 @@
 // @ts-check
-/* eslint-env node */
+
+/* global module -- Global defined by Node.js */
 
 /**
  * An object with Prettier.js options.
